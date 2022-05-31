@@ -54,7 +54,7 @@ function App() {
         method: 'DELETE',
       });
 
-      const responseJson = await response.json();
+       await response.json();
 
       setList(list.filter(el => el.id !== id));
 
